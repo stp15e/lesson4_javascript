@@ -156,9 +156,9 @@
               
               var shelterAmt = document.getElementById("shelterInput").value;
               var foodAmt = document.getElementById("foodInput").value;
-              var householdAmt = documentElementById("householdInput").value;
-              var transportationAmt = documentElementById("transportationInput").value;
-              var otherAmt = documentElementById("otherInput").value;
+              var householdAmt = document.getElementById("householdInput").value;
+              var transportationAmt = document.getElementById("transportationInput").value;
+              var otherAmt = document.getElementById("otherInput").value;
               
 
               /*************************************************************************************************
@@ -224,7 +224,7 @@
                *          variables declared in Task 4.  
               *******************************************************************************************************/   
          
-
+              totalExpenses = shelterAmt + foodAmt + householdAmt + transportationAmt + otherAmt;
               shelterPct = 100 * (shelterAmt / totalExpenses);
               foodPct = 100 * (foodAmt / totalExpenses);
               householdPct = 100 * (householdAmt / totalExpenses);
@@ -290,6 +290,9 @@
               document.getElementById("totalExpenses").innerHTML = ""; 
               document.getElementById("shelterPercentage").innerHTML = "";      
               document.getElementById("foodPercentage").innerHTML  = "";
+              document.getElementById("householdPercentage").innerHTML  = "";
+              document.getElementById("transportationPercentage").innerHTML  = "";
+              document.getElementById("otherPercentage").innerHTML  = "";
 
 
               
